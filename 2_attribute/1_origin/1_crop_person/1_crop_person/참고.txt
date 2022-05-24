@@ -1,0 +1,5 @@
+input   : cvatxml, img
+output : person croped img
+
+*cvatxml, img 파일을 이용해 사람만 crop한 img 추출하기
+

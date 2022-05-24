@@ -1,0 +1,5 @@
+input   : cvatxmls, img, 83class img가 저장될 폴더
+output : img.txt, annotation.txt, 83class img 파일
+
+*common, head, upper, lower 폴더에 각각 66img.txt, 83/66annotation.txt, 83class img 파일 추출하기 
+

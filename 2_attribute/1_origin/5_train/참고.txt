@@ -1,0 +1,5 @@
+input   : MAIN_DIR(학습 폴더 위치), Config_file(config.data), Classes_file(9class.name),
+           TRAIN_IMG_DIR(train_img_list), TRAIN_MERGE_ATT(train_attribute_annotation),
+           VAL_IMG_DIR(valid_img_list), VAL_MERGE_ATT(valid_attribute_annotation)
+변수    : earlystopping
+output : weight/best_weight 파일

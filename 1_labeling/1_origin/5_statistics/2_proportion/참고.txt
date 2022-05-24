@@ -1,0 +1,5 @@
+input   : pascal voc xml 파일
+변수    : 2/6/7class 라벨
+output : 각 class별 객체 비율
+
+*xml 파일을 이용하여 각 class별 객체 비율 출력하기

@@ -1,0 +1,23 @@
+[2class>1_cvatxml_to_xml]
+input   : cvatxml 파일이 들어있는 data_process 폴더, img 파일
+           (data_process > cvatxmls, documents, notpure, pure, xmls)
+output : xml 파일
+
+*cvatxml 파일을 pascal voc xml 파일로 바꾸기
+
+-------
+[2class>2_xml_to_txt]
+input   : pure>annotation>train>xml 파일, 저장 폴더 yolotxt 폴더, basemodel.names 파일 
+output : txt 파일
+
+*xml 파일을 yolo txt 파일로 바꾸기
+
+-------
+[6/7class]
+input   : cvatxml 파일이 들어있는 data_process 폴더, img 파일
+           (data_process > cvatxmls, documents, notpure, pure, xmls) 
+변수    : 6 classes면 labels = ['person', 'car', 'bus', 'truck', 'bicycle', 'motorbike']
+           7 classes면 labels = ['person', 'car', 'bus', 'truck', 'unknown car', 'bicycle', 'motorbike']
+output : 10class_xml, 6/7class_xml, yolo_txt, copy_img 폴더
+
+*cvatxml 파일을 yolo txt 파일로 바꾸기

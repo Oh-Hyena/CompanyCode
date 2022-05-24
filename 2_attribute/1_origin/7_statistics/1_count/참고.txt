@@ -1,0 +1,5 @@
+input   : annotation.txt 파일
+변수    : class 
+output : 해당 class 의 객체 개수 출력
+
+*annotation.txt 파일을 읽어 해당 class별 객체 개수 출력하기

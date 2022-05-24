@@ -1,0 +1,14 @@
+[flipping, randomHSV]
+input   : 특정 class에 해당하는 xml, img 파일, 저장할 xml, img, txt 각각 폴더
+변수    : 폴더/파일 이름, 2/6/7class 라벨
+output : 증강한 xml, img, txt 폴더
+
+*특정 class에 해당하는 xml, img 을 가지고 데이터 증강하기
+
+-------
+[rotation, scale_plus, shearing]
+input   : 특정 class에 해당하는 xml, img 파일, 저장할 xml, img, txt 통째 폴더
+변수    : 폴더/파일 이름, 2/6/7class 라벨
+output : 증강한 xml, img, txt 폴더
+
+*특정 class에 해당하는 xml, img 을 가지고 데이터 증강하기

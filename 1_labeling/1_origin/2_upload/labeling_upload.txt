@@ -1,0 +1,162 @@
+[
+  {
+    "name": "car",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "person",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bus",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "truck",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bicycle",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "motorbike",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "excavator",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "forklift",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ladder truck",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unknown car",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "occlusion",
+          "truncate",
+          "cloudy"
+        ]
+      }
+    ]
+  }
+]

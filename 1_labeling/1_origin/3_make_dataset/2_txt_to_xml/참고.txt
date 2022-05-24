@@ -1,0 +1,5 @@
+input   : txt 파일, img 파일, xml 저장 폴더
+           (data_process > cvatxmls, documents, notpure, pure, xmls)
+output : xml 파일
+
+*yolo txt 파일을 pascal voc xml 파일로 바꾸기

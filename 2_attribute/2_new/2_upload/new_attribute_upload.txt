@@ -1,0 +1,699 @@
+[
+    {
+        "name": "all",
+        "attributes": 
+        [
+            {
+                "name": "gender",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "male",
+                    "female",
+                    "genderdk"
+                ]
+            },
+            {
+                "name": "age",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "0~7",
+                    "8~13",
+                    "14~19",
+                    "20~70",
+                    "70~"
+                    "agedk"
+                ]
+            },
+        ]
+    },
+    {
+        "name" : "bag",
+        "attributes":
+        [            
+            {
+                "name": "backpack",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "shoulderbag",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "handbag",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },            
+            {
+                "name": "plasticbag",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "carrier",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagdk",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                  "false"
+                ]
+            },
+            {
+                "name": "bagless",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "true"
+                ]
+            },
+            {
+                "name": "bagwhite",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "baggrey",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagblack",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagbeige",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagbrown",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagred",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagyellow",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "baggreen",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagblue",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagpurple",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagpattern1",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagpattern2",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagcolordk",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "bagcolorless",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },      
+        ]
+    },
+    {
+        "name": "head",
+        "attributes": 
+        [
+            {
+                "name": "hat",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    
+                    "cap",
+                    "brimmed",
+                    "brimless",
+                    "helmat",
+                    "hood",
+                    'hairaccessory',
+                    "hatdk",
+                    "hatless"
+                ]
+            },
+            {
+                "name": "hatwhite",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatgrey",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatblack",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatbeige",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatbrown",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatred",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatyellow",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatgreen",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatblue",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatpurple",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "hatpattern1",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },            
+            {
+                "name": "hatpattern2",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "hairshort",
+                    "hairmiddle",
+                    "hairlong",
+                    "hairbald",
+                    "hairdk"
+                ]
+            },
+            {
+                "name": "hatcolordk",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },            
+            {
+                "name": "hatcolorless",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "hairshort",
+                    "hairmiddle",
+                    "hairlong",
+                    "hairbald",
+                    "hairdk"
+                ]
+            },
+            {
+                "name": "hair",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "hairshort",
+                    "hairmiddle",
+                    "hairlong",
+                    "bald",
+                    "ponytail",
+                    "hairdk"
+                ]
+            },
+        ]
+    },
+    {
+        "name": "upper",
+        "attributes": 
+        [
+            {
+                "name": "top",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "shortshirt",
+                    "middleshirt",
+                    "longshirt",
+                    "shirtdk"
+                ]
+            },
+            {
+                "name": "upperwhite",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "uppergrey",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperblack",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperbeige",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperbrown",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperred",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperyellow",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "uppergreen",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperblue",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperpurple",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperpattern1",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "upperpattern2",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "uppercolordk",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },      
+        ]
+    },
+    {
+        "name": "lower",
+        "attributes": 
+        [
+            {
+                "name": "bottom",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "shortpants",
+                    "middlepants",
+                    "longpants",
+                    "shortskirt",
+                    "middleskirt",
+                    "longskirt",
+                    "lowerdk"
+                ]
+            },
+            {
+                "name": "lowerwhite",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowergrey",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerblack",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerbeige",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerbrown",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerred",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "loweryellow",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowergreen",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerblue",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerpurple",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerpattern1",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowerpattern2",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+            {
+                "name": "lowercolordk",
+                "input_type": "checkbox",
+                "mutable": true,
+                "values": 
+                [
+                    "false"
+                ]
+            },
+        ]
+    },
+    {
+        "name": "shoes",
+        "attributes": 
+        [
+            {
+                "name": "shoes_color",
+                "input_type": "select",
+                "mutable": true,
+                "values": 
+                [
+                    "shoeswhite",
+                    "shoesgrey",
+                    "shoesblack",
+                    "shoesbeige",
+                    "shoesbrown",
+                    "shoesred",
+                    "shoesyellow",
+                    "shoesgreen",
+                    "shoesblue",
+                    "shoespurple",
+                    "shoespattern1",
+                    "shoespattern2",
+                    "shoescolordk"
+                ]
+            },
+        ]
+    }
+]

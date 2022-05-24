@@ -1,0 +1,98 @@
+[1.0.0] 2021-10-13
+==================
+    - 프로젝트 모듈화 및 디렉토리 분할
+    - (NEW) CVAT XML 파일의 Element 들에 대한 정보 및 ClassMake 분류 기준이 담긴 `classData.xlsx` 파일 정리
+    - (NEW) classData.xlsx 파일을 읽고 필요한 정보를 추출/관리하는 `ExcelDataClass.py` 생성
+    - (NEW) 프로젝트 내에서 범용적으로 사용되는 함수들 `CommonUse.py`에 분할
+    - (NEW) 주어진 경로/조건 인자들을 바탕으로 MakeClass 하는 `RunFunction.MakeClass.py` 생성
+
+
+[1.0.1] 2021-10-14
+==================
+    - (NEW) 규칙에 맞게 ConditionCheck 할 항목을 인자로 넘기면, 조건 체크 등록 및 일괄 처리 하는 `CheckCondClass.py` 생성
+    - (NEW) 주어진 경로/조건 인자들을 바탕으로 SliceImg 하는 `RunFunction.SliceImgClass.py` 생성
+    - (NEW) MakeClass.py 와 SliceImgClass.py 에 공통적으로 들어있는 CVAT XML 처리 관련 구성들을 `CvatXmlClass.py`로 분할 생성
+    - (FIX) 터미널 출력 결과 시각화 및 수정
+    - (ADD) 작업 중 손상된 이미지를 따로 처리하는 부분 추가 (SliceImgClass.py, MakeClass.py)
+    - (ADD) 축약된 이미지들을 다루는 경우 추가
+    - (NEW) README 작성
+
+
+[1.0.2] 2021-10-15
+==================
+    - (NEW) 경로/조건 인자들을 UI 상으로 선택할 수 있는 `UI.SelectUI.SelectUIClass.py` 생성
+    - (FIX) 현재까지 작업 파일들의 DocString 정리
+    - (NEW) ConditionCheck Error 목록들을 저장하는 `SaveLogClass.py` 생성
+    - (NEW) 랜덤하게 일정 % 의 목록을 추출하는 `RandomExtractClass.py` 이식
+
+
+[1.0.3] 2021-10-18
+==================
+    - (ADD) 현재 이미지의 사이즈를 가져올 수 있게 관련 함수 추가
+    - (FIX) UI가 가장 최근의 경로를 기억하게 수정
+    - (ADD) CheckExtract 의 결과물을 txt로 저장할 수 있게 추가
+
+
+[1.0.4] 2021-10-19
+==================
+    - (ADD) Git 연동
+    - (FIX) 저장 파일 이름들을 각자의 RunFunction에서 상단 Define값으로 변경
+    - (ADD) RandomExtractClass 를 ExtractAnnotation 으로 변경 및 Split 기능 추가
+    - (ADD) 경로 일괄 합성 코드 추가
+    - (FIX) RunFunction 종료시 해당 결과 폴더 열게 수정
+
+
+[1.0.5] 2021-10-20
+==================
+    - (ADD) Attribute Data 분석을 위한 Analysis 코드 추가
+    - (FIX) ExtractCheck UI 상에서도 할 수 있게 수정
+
+
+[1.0.6] 2021-11-05
+==================
+    - (FIX) UI 구분선 추가
+    - (ADD) ExtractAnnotation 에 ConditionExtract 기능 추가
+    - (FIX) 버그 수정
+    - (ADD) MakeClass에 ANALYSIS_IMAGE_SIZE 추가
+    - (FIX) 프로그램에서 창을 닫을 때 계속해서 실행되지 않고 바로 꺼지게 변경
+    - (ADD) 프로그램 고르는 UI 추가
+    - (FIX) RunFunction들이 각자의 코드에서도 실행될 수 있게 변경
+    - (ADD) 프로젝트 관리용 Tasks.todo 추가
+    - (ADD) BatchFile 추가
+    - (FIX) UI 속도 개선
+    - (ADD) 조건 체크 필터링 함수 프로그램으로 분할
+
+
+[1.0.7] 2021-11-07
+==================
+    - (ADD) 특정 Attribute 조건 하에서 ImageSize 평균값 계산 및 이미지 이름별 사이즈 결과 txt 출력 추가
+
+
+[1.0.8] 2021-11-08
+==================
+    - (FIX) 각 RunFunction class instance 및 ExcelDataClass를 Singleton으로 변환
+    - (FIX) ConditionCheckError.xlsx가 덮어씌워지도록 변경
+
+
+[1.0.9] 2021-11-09
+==================
+    - (FIX) CleanUp Code
+    - (FIX) 각 프로그램이 경로를 공유하도록 기능 추가
+    - (FIX) 프로그램이 끝날때 사용한 경로를 CoreDefine에 저장하는 기능 추가
+
+
+[1.1.0] 2021-11-10
+==================
+    - (FIX) UI 수정 및 기능 개선
+    - (FIX) CoreDefine 저장 기능 개선
+
+
+[1.1.1] 2022-02-07
+==================
+    - (ADD) Class 별 엑셀파일 적용하여, 엑셀만 바꾸면 N Class 적용 가능
+    - (ADD) UI에 엑셀 파일 선택 기능 및 실시간 적용기능 추가
+
+
+[1.1.2] 2022-04-15
+==================
+    - (ADD) MakeClass 기능 실행 시 로그 파일 엑셀 데이터로 저장하는 기능 추가 

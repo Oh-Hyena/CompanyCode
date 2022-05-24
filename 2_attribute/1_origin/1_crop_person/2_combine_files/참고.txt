@@ -1,0 +1,6 @@
+input   : person croped img 파일
+변수    : 폴더/파일 이름, 이미지 장수
+output : 원하는 장수만큼 묶어진 폴더
+
+*사람만 crop한 img 파일들을 원하는 장수만큼 묶어서 폴더 만들기
+

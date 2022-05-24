@@ -1,0 +1,34 @@
+[
+  {
+    "name": "person",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "cloudy",
+          "overlap",
+          "cut"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "car",
+    "attributes": [
+      {
+        "name": "states",
+        "input_type": "radio",
+        "mutable": true,
+        "values": [
+          "pure",
+          "cloudy",
+          "overlap",
+          "cut"
+        ]
+      }
+    ]
+  },  
+]

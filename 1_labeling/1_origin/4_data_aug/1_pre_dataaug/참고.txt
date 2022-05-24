@@ -1,0 +1,4 @@
+input   : xml, img 파일, 저장할 xml, img 폴더
+output : 특정 class에 해당하는 xml, img
+
+*전체 xml, img 파일에서 특정 class에 해당하는 xml, img 파일 복사하기

@@ -1,0 +1,4 @@
+input   : 각각 common, head, upper, lower annotation.txt 파일
+output : 전체 합쳐진 annotation.txt 파일 
+
+*각각 common, head, upper, lower annotation.txt 파일들 합치기
