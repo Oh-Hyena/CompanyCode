@@ -86,8 +86,9 @@ def imwrite(filename, img, params=None):
              return True
         else:
              return False
+         
     except Exception as e:
-        print(e)
+        print(f"imwrite error : {e}")
         return False
 
 
