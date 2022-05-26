@@ -1,8 +1,8 @@
 import os
 import sys
 
-SRC_PATH        = r"E:\hyena\7_git\test\txt_dataset"
-DST_PATH        = r"E:\hyena\7_git\test\res_txt_dataset"
+SRC_PATH        = r"D:\hyena\7_git\CompanyCode\3_etc\erase_object\txt"
+DST_PATH        = r"D:\hyena\7_git\CompanyCode\3_etc\erase_object\res"
 ENCODING_FORMAT = "utf-8"
 
 imgXlen         = 40
@@ -20,7 +20,7 @@ def readFileToList(fileName:str):
         for eachLine in rf:
             fList.append(eachLine.strip('\n'))
 
-    print('=============================================')
+    print()
     print(f'[Done] File Read Done : {fileName} - {len(fList)} 개')
     return fList
 
@@ -93,13 +93,14 @@ def searchRecursiveDir():
                 print(f'  - {file} : {readList} : ', end="")
                 
                 
-                # modify
                 imgWidth  = 1920
                 imgHeight = 1080
                 
+                tmpValidValueList = []
+                
                 for each in readList:
                     eachSplit = each.split(" ")
-                   
+                    
                     x_mid  = float(eachSplit[1])
                     y_mid  = float(eachSplit[2])
                     width  = float(eachSplit[3])
@@ -113,21 +114,15 @@ def searchRecursiveDir():
                     xlen = abs(float(xtl)-float(xbr))
                     ylen = abs(float(ytl)-float(ybr))
                     
+                    # 큰 사이즈 객체만 남기기
                     if float(xlen) > imgXlen and float(ylen) > imgYlen:
-                        writeListToFile(totalDstFilePath, readList)
+                        tmpValidValueList.append(each)
                         print('is Vaild')
                     else:
-                        writeEmptyToFile(totalDstFilePath)
                         print('Empty Write')
                         
+                writeListToFile(totalDstFilePath, tmpValidValueList)
                 
-                # origin
-                # if VALID_VALUE in readList:
-                #     writeListToFile(totalDstFilePath, readList)
-                #     print('is Vaild')
-                # else:
-                #     writeEmptyToFile(totalDstFilePath)
-                #     print('Empty Write')
 
         print('=============================================')
         print()

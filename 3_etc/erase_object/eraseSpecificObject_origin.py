@@ -1,8 +1,8 @@
 import os
 import sys
 
-SRC_PATH        = r"E:\hyena\7_git\test\test_dataset"
-DST_PATH        = r"E:\hyena\7_git\test\res_txt_dataset"
+SRC_PATH        = r"E:\hyena\7_git\CompanyCode\3_etc\erase_object\txt"
+DST_PATH        = r"E:\hyena\7_git\CompanyCode\3_etc\erase_object\res"
 ENCODING_FORMAT = "utf-8"
 
 VALID_VALUE     = '1'
