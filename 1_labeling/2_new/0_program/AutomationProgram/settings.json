@@ -1,0 +1,95 @@
+{
+    "app_name": "AutomationProgram_Hyena",
+    "version": "ProtoType",
+    "copyright": "By: So Byung Jun",
+    "custom_title_bar": true,
+    "run_function_argv": {
+        "Default": {
+            "sep": "$$$",
+            "StartIndex": {
+                "head": "StartIndex",
+                "type": "int",
+                "default": "0",
+                "CurValue": "0"
+            },
+            "LogPath": {
+                "head": "LogPath",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "NoneChanged"
+            },
+            "AddWork": {
+                "head": "UncertainOn",
+                "type": "str",
+                "default": "ON",
+                "CurValue": "ON"
+            },
+            "ResDir": {
+                "head": "resDir",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "NoneChanged"
+            }
+        },
+        "Xml_To_Text": {
+            "sep": "$$$",
+            "StartIndex": {
+                "head": "StartIndex",
+                "type": "int",
+                "default": "0",
+                "CurValue": "5"
+            },
+            "LogPath": {
+                "head": "LogPath",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "NoneChanged"
+            },
+            "AddWork": {
+                "head": "UncertainOn",
+                "type": "str",
+                "default": "ON",
+                "CurValue": "ON"
+            },
+            "ResDir": {
+                "head": "resDir",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "NoneChanged"
+            }
+        },
+        "Make_2_Class": {
+            "sep": "$$$",
+            "StartIndex": {
+                "head": "StartIndex",
+                "type": "int",
+                "default": "0",
+                "CurValue": "10"
+            },
+            "LogPath": {
+                "head": "LogPath",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "C:\\PythonProject\\AutomationProgram\\save.txt"
+            },
+            "AddWork": {
+                "head": "UncertainOn",
+                "type": "str",
+                "default": "ON",
+                "CurValue": "OFF"
+            },
+            "ResDir": {
+                "head": "resDir",
+                "type": "str",
+                "default": "NoneChanged",
+                "CurValue": "D:/Ai_Save"
+            },
+            "NoMean": {
+                "head": "noMean",
+                "type": "str",
+                "default": "NoneValue",
+                "CurValue": "NoneValue"
+            }
+        }
+    }
+}

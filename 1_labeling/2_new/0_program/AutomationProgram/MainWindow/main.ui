@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HyenaProject</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* VERTICAL SCROLLBAR */
+QScrollBar:vertical {
+	border: none;
+	background-color: rgb(90, 90, 134);
+	width: 14px;
+	margin: 15px 0 15px 0;
+	border-radius: 0px;
+}
+
+/* HANDLEBAR VERTICAL */
+QScrollBar::handle:vertical {
+	background-color: rgb(60, 60, 90);
+	min-width:30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::handle:vertical:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border:none;
+	background-color: rgb(60, 60, 90);
+	height: 15px;
+	border-top-left-radius:7px;
+	border-top-right-radius: 7px;
+	subcontrol-position:top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border:none;
+	background-color: rgb(60, 60, 90);
+	height: 15px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position:bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background:none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background:none;
+}
+
+
+/* */
+/* VERTICAL SCROLLBAR */
+QScrollBar:horizontal {
+	border: none;
+	background-color: rgb(90, 90, 134);
+	height: 14px;
+	margin: 0 15px 0 15px;
+	border-radius: 0px;
+}
+
+/* HANDLEBAR VERTICAL */
+QScrollBar::handle:horizontal {
+	background-color: rgb(60, 60, 90);
+	min-height:30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::handle:horizontal:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:horizontal {
+	border:none;
+	background-color: rgb(60, 60, 90);
+	width: 15px;
+	border-top-left-radius:7px;
+	border-bottom-left-radius: 7px;
+	subcontrol-position:left;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:horizontal:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:horizontal {
+	border:none;
+	background-color: rgb(60, 60, 90);
+	width: 15px;
+	border-top-right-radius:7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position:right;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover {
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:horizontal:pressed {
+	background-color: rgb(220, 0, 110);
+}
+
+
+/* RESET ARROW */
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+	background:none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background:none;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="TotalFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>450</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="selectPathButton">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>100</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(125, 125, 185);
+}</string>
+     </property>
+     <property name="text">
+      <string>Select Path</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ExtractPathButton">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>140</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(125, 125, 185);
+}</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEFormat">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>140</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxSelectMenu">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Extract Lower Dir</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Count File Num</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="PathLE">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>430</width>
+       <height>580</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(53, 53, 79);
+border-radius: 20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="TE_Log">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>411</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="QuitBotton">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>20</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(125, 125, 185);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>x</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Log</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TitleLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>340</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color:#FFFFFF;
+	border-bottom-left-radius:15px;
+	border-top-left-radius: 15px;
+	background-color: rgb(115, 115, 171);</string>
+     </property>
+     <property name="text">
+      <string>   HN Program</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Pretreatment</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>411</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>411</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>490</y>
+       <width>411</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RunFunctionLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>510</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Run Function</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxSelectFunction">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>540</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RunFuncButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>540</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(125, 125, 185);
+}</string>
+     </property>
+     <property name="text">
+      <string>Run Default</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="InSettingButton">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>20</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	background-color: rgb(125, 125, 185);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>?</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>510</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="toggleLayout"/>
+    </widget>
+    <zorder>frame</zorder>
+    <zorder>selectPathButton</zorder>
+    <zorder>ExtractPathButton</zorder>
+    <zorder>LEFormat</zorder>
+    <zorder>comboBoxSelectMenu</zorder>
+    <zorder>PathLE</zorder>
+    <zorder>TE_Log</zorder>
+    <zorder>QuitBotton</zorder>
+    <zorder>label</zorder>
+    <zorder>TitleLabel</zorder>
+    <zorder>label_2</zorder>
+    <zorder>line</zorder>
+    <zorder>line_2</zorder>
+    <zorder>line_3</zorder>
+    <zorder>RunFunctionLabel</zorder>
+    <zorder>comboBoxSelectFunction</zorder>
+    <zorder>RunFuncButton</zorder>
+    <zorder>InSettingButton</zorder>
+    <zorder>verticalLayoutWidget</zorder>
+   </widget>
+   <widget class="QFrame" name="SettingMainFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>450</width>
+      <height>270</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="SetOptionOuterFrame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>430</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(214, 0, 107);
+border-radius: 20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>420</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="SettingQuitBotton">
+       <property name="geometry">
+        <rect>
+         <x>385</x>
+         <y>5</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-bottom-right-radius:15px;
+	border-top-right-radius: 15px;
+	background-color: rgb(125, 125, 185);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="SettingStackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>23</x>
+       <y>190</y>
+       <width>401</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-20</y>
+         <width>16</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(53, 53, 79);</string>
+       </property>
+       <property name="text">
+        <string>SkipCount per Search Dir</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LE_SkipCount">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>20</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>16</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LE_StartCount">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(53, 53, 79);</string>
+       </property>
+       <property name="text">
+        <string>Start Count</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>10</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(53, 53, 79);</string>
+       </property>
+       <property name="text">
+        <string>AddWork Uncertain List</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>-10</y>
+         <width>16</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>10</y>
+         <width>81</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="addWorkUncertainLayout"/>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="text">
+      <string>Setting</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectPathButton_runFunctionResDir">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>150</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(125, 125, 185);
+}</string>
+     </property>
+     <property name="text">
+      <string>Modify..</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectPathButton_ExtractSubDirPath">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>80</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:10px;
+	background-color: rgb(125, 125, 185);
+}</string>
+     </property>
+     <property name="text">
+      <string>Modify..</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_Setting_RunFunctionDir">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>150</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_Setting_ExtractSubDirFileName">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>3</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="midLineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="text">
+      <string>Extract SubDir Path</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>3</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="midLineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_Setting_ExtractSubDirPath">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>60</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="text">
+      <string>File Name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>281</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(53, 53, 79);</string>
+     </property>
+     <property name="text">
+      <string>Run Function Result Save Dir</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="CustomRunButton">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>430</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Symbol</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color:#FFFFFF;
+	border-radius:50px;
+	background-color: rgb(115, 115, 171);
+}
+
+QPushButton:hover {
+	color:#FFFFFF;
+	border-radius:50px;
+	background-color: rgb(146, 146, 217);
+}
+
+QPushButton:pressed {
+	color:#FFFFFF;
+	border-radius:50px;
+	background-color: rgb(125, 125, 185);
+}</string>
+    </property>
+    <property name="text">
+     <string>Run!</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SettingQuitBotton</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingMainFrame</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>894</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>InSettingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingMainFrame</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
