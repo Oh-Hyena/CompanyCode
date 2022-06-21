@@ -3,12 +3,12 @@ import sys
 import cv2
 
 
-videoDir        = r"E:\sampling_test\seongnamfalse0211_video"
-resDir          = r"E:\sampling_test\seongnamfalse0211_img3"
+videoDir        = r"E:\0610\seongnamfalse0125_video"
+resDir          = r"E:\0610\seongnamfalse0125_img"
 
 ENCODING_FORMAT = "UTF-8"
-resFolderName   = "seongnamfalse0211"
-fileNum         = 10
+resFolderName   = "seongnamfalse0125_img"
+fileNum         = 100
 
 
 def checkInitDirValid():
@@ -19,6 +19,11 @@ def checkInitDirValid():
         print(f'[Error] {resDir} is invalid')
         return False
     return True
+
+
+def makeChangeResDir(resDir):
+    if not os.path.isdir(resDir):
+        os.makedirs(resDir, exist_ok=True)
 
 
 def numCount(length, num):
@@ -37,11 +42,26 @@ def makeEachDestDir(Count):
     return folderName, DestDir
 
 
+def imwrite(filename, img, params=None):
+    try:
+        ext       = os.path.splitext(filename)[1]
+        result, n = cv2.imencode(ext, img, params)
+
+        if result:
+             with open(filename, mode='w+b') as f:
+                 n.tofile(f)
+             return True
+        else:
+             return False
+         
+    except Exception as e:
+        print(f"imwrite error : {e}")
+        return False
+
+
 def VideoToImg():
     folderCount  = 1
     fileCount    = 1
-    totalCount   = 0
-    imgCountList = []
     
     videoList = os.listdir(videoDir)
         
@@ -67,32 +87,19 @@ def VideoToImg():
                 fileName = "_" + numCount(6, str(fileCount)) + ".jpg"
                 cv2.imwrite(os.path.join(DestDir, folderName + fileName), img)
                 
-                totalCount  = fileCount
                 fileCount  += 1
                 
                 if fileCount == fileNum + 1:
                       folderCount += 1
                       fileCount    = 1
                       
-            print(f"[ 완료 ] {folderName} -> {totalCount}")
-            print()
-            imgCountList.append(f"{folderName} : {totalCount}")
-            
             capture.release()
             
-    return imgCountList
-
-
-def writeImgCount(imgCountList):
-    resPath = os.path.join(resDir, resFolderName + ".txt")
-    with open(resPath, 'w', encoding=ENCODING_FORMAT) as f:
-        for imgCount in imgCountList:
-            f.write(f"{imgCount}\n")
-
                
 if __name__ == "__main__":
+    makeChangeResDir(resDir)
+    
     if checkInitDirValid() is False:
         sys.exit(-1)
     
-    imgCountList = VideoToImg()
-    writeImgCount(imgCountList)
+    VideoToImg()

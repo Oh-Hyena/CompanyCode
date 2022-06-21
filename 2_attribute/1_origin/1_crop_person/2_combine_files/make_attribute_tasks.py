@@ -9,8 +9,8 @@ import os
 import shutil
 
 
-cropedrootpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\legacy"
-tasksrootpath = r"D:\p40_dataset\legacy\legacy_150upload"
+cropedrootpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\legacy_original"
+tasksrootpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original\upload"
 taskname = "legacy_"    ## 언더바 넣어야함.
 tasknumber = 1
 
