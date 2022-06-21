@@ -9,10 +9,10 @@ import shutil
 import cv2
 
 
-targetDir = r"E:\test\copyimg_test\result"
+targetDir          = r"E:\test\copyimg_test\result"
 annotationFilePath = r"E:\test\copyimg_test\Annotation_39_Class.txt"
-imgListFilePath = r"E:\test\copyimg_test\39Class_ImgList.txt"
-resultDir = r"E:\test\copyimg_test\move2"
+imgListFilePath    = r"E:\test\copyimg_test\39Class_ImgList.txt"
+resultDir          = r"E:\test\copyimg_test\move2"
 
 
 # targetDir 하위디렉토리까지 탐색하면서 있는 이미지들 dict 에 넣기

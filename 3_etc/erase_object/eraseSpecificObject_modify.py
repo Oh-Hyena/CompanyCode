@@ -1,3 +1,5 @@
+# txt 파일을 읽어서 조건에 해당하는 것만 가져오기
+
 import os
 import sys
 
