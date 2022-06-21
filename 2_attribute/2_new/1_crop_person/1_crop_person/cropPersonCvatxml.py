@@ -4,8 +4,8 @@ import numpy as np
 import xml.etree.ElementTree as ET
 
 
-xmlDir     = r"E:\hyena\3_dataset\seongnamfalse\2021\1112\seongnamfalse1112\test\xml"
-imgDir     = r"E:\hyena\3_dataset\seongnamfalse\2021\1112\seongnamfalse1112\test\img"
+xmlDir = r"E:\hyena\3_dataset\seongnamfalse\2021\1112\seongnamfalse1112\test\xml"
+imgDir = r"E:\hyena\3_dataset\seongnamfalse\2021\1112\seongnamfalse1112\test\img"
 resDir = r"E:\hyena\3_dataset\seongnamfalse\2021\1112\seongnamfalse1112\test\crop"
 
 

@@ -3,13 +3,13 @@ import os
 import sys
 
 
-MIX_FIRST_ANNOT_FILE    = r"C:\attribute_3rd_dataset\final_dataset\test_merge_annotation.txt"
-MIX_FIRST_IMAGE_FILE    = r"C:\attribute_3rd_dataset\final_dataset\test_common_img_list.txt"
+MIX_FIRST_ANNOT_FILE    = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\Annotation_39_Class.txt"
+MIX_FIRST_IMAGE_FILE    = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\39Class_ImgList.txt"
 # MIX_LAST_ANNOT_FILE     = r"man_train_merge_annotation.txt"
 # MIX_LAST_IMAGE_FILE     = r"man_train_common_img_list.txt"
 
-RESULT_ANNOT_FILE       = r"C:\attribute_3rd_dataset\final_dataset\shuffle\test_merge_annotation.txt"
-RESULT_IMAGE_FILE       = r"C:\attribute_3rd_dataset\final_dataset\shuffle\test_common_img_list.txt"
+RESULT_ANNOT_FILE       = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\res\Annotation_39_Class.txt"
+RESULT_IMAGE_FILE       = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\res\39Class_ImgList.txt"
 
 ENCODING_FORMAT         = "utf-8"
 

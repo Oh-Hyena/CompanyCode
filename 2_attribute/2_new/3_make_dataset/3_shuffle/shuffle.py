@@ -3,11 +3,11 @@ import sys
 from random import shuffle
 
 
-annotation_file = r""
-img_file = r""
+annotation_file = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\Annotation_39_Class.txt"
+img_file = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\Annotation_39_Class.txt"
 
-shuffle_annotation_file = r""
-shuffle_img_file = r""
+shuffle_annotation_file = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\res\Annotation_39_Class.txt"
+shuffle_img_file = r"E:\hyena\7_git\CompanyCode\2_attribute\2_new\3_make_dataset\3_shuffle\res\39Class_ImgList.txt"
 
 encoding_format = "utf-8"
 

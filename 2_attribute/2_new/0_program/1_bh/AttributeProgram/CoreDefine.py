@@ -63,24 +63,24 @@ CrushedImgFileName          = 'CrushImg.txt'
 OriginSource_cvatXml_Path   = r"F:\ai_hub\CCTV_추적_영상\잡상인\cctv_merchant3\att_cctv_merchant3_500_xml"
 OriginSource_Img_Path       = r"F:\ai_hub\CCTV_추적_영상\잡상인\cctv_merchant3\att_cctv_merchant3_500_img"
 
-OriginSource_AnntationPath  = r"D:\PyCharm\Res_0207\Annotation_39_Class.txt"
-OriginSource_ImageListPath  = r"D:\PyCharm\Res_0207\39_Class_ImgList.txt"
+OriginSource_AnntationPath  = r"E:\test\ConditionFilter_Annotation.txt"
+OriginSource_ImageListPath  = r"E:\test\ConditionFilter_ImgList.txt"
 
 OriginSource_AnalysisPath   = r"C:\PythonHN\Data\Res1107\ImageSize_Analysis_Source.txt"
 
-Result_Dir_Path             = r"F:\ai_hub\CCTV_추적_영상\잡상인\cctv_merchant3\make_class\24class"
+Result_Dir_Path             = r"E:\test"
 
 Abbreviated_Img_Path        = r"C:\PythonHN\Data\ABB TEST\condition_common_img"   # 축약시킨 이미지 들어있는 폴더
 RealExistCheck_Path         = r""
 
-Pre_Search_Remember_Path    = r"F:/ai_hub/CCTV_추적_영상/잡상인/cctv_merchant3/make_class"
+Pre_Search_Remember_Path    = r"E:/test"
 
 
 # OTHER DEFINES
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 CORE_ENCODING_FORMAT    = 'utf-8'                       # 파일 Read 할 때, 인코딩 포맷
 VALID_IMG_FORMAT        = ['.jpg', '.png', '.jpeg']     # Img 유효한 확장자
-CORE_FILTER_CONDITION   = '(Attribute[0] == "1") and (Attribute[5] == "1") and ((Attribute[7] == "1") or (Attribute[10] == "1"))'
+CORE_FILTER_CONDITION   = '(Attribute[5] == "0") or (Attribute[12] == "0") or (Attribute[13] == "0") or (Attribute[26] == "0")'
 CUR_ZIP_CLASS_XLSX      = r"ClassData\39Class.xlsx"
 
 
