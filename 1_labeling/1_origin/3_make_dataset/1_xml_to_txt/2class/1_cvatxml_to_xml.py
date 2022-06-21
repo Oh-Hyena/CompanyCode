@@ -42,9 +42,9 @@ import random
 from xml.dom import minidom
 
 # data_process > cvatxmls, documents, notpure, pure, xmls 하위 폴더 만들기
-rootpath = r"E:\test\data_process"
+rootpath = r"E:\0530\data_process"
 
-imageRootpath = r"E:\test\sports2_img"
+imageRootpath = r"E:\0530\img"
 
 logpath = os.path.join(rootpath, "documents")
 

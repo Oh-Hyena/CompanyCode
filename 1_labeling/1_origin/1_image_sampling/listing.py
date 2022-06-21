@@ -20,13 +20,13 @@ import shutil
 import numpy as np
 
 # 원본 동영상이 있는 폴더 경로
-videopath = r"D:\HN_code\test\1_labeling\1_listing\seongnamfalse1111_video"
+videopath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\legacy_original"
 
 # 샘플링한 이미지를 저장할 폴더 경로
-targetpath = r"D:\HN_code\test\1_labeling\1_listing\seongnamfalse1111_img"
+targetpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original\upload"
 
 # 저장될 이미지 폴더 이름(seongnamfalse0430_00001_00001.jpg) 중 class 부분
-videoclass = "seongnamfalse1111"
+videoclass = "legacy"
 # 저장될 이미지 폴더 이름(seongnamfalse0430_00001_00001.jpg) 중 번호 부분
 videonumber = 1
 

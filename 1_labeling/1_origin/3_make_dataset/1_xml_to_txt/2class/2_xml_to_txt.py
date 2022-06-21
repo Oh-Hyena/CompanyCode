@@ -9,10 +9,10 @@ import cv2
 
                               
 
-dir_name = r"E:\test\data_process\xmls" #.xml파일의 위치를 전부 로드한다.(이미지 섞여있어도 됨.) (절대경로)
-save_dir = r"E:\test\sports2_txt"              #yolo style txt 저장 위치. (절대경로)
+dir_name = r"E:\0530\data_process\xmls" #.xml파일의 위치를 전부 로드한다.(이미지 섞여있어도 됨.) (절대경로)
+save_dir = r"E:\0530\txt"              #yolo style txt 저장 위치. (절대경로)
 
-category_dir = r"E:\test\basemodel.names" #카테고리 로드 (절대경로)
+category_dir = r"E:\0530\basemodel.names" #카테고리 로드 (절대경로)
 
 
 #적어놓은 카테고리를 리스트화
