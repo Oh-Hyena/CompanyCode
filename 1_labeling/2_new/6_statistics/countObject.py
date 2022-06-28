@@ -4,8 +4,8 @@ import os
 import sys
 
 
-txtDir = r"E:\0610\seongnamfalse0125_txt"
-resDir = r"E:\0610"
+txtDir = r"D:\0610\dataset2\total_dataset"
+resDir = r"D:\0610\dataset2"
 
 ENCODING_FORMAT     = "UTF-8"
 
