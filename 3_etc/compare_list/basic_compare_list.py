@@ -1,8 +1,8 @@
 import os
 
-txt_list_path = r'E:\test\compare_list_test\txt_list.txt'
-img_list_path = r'E:\test\compare_list_test\img_list.txt'
-saveDir = r'E:\test\compare_list_test\save'
+txt_list_path = r'D:\dataset\test_list.txt'
+img_list_path = r'D:\0628\dataset\test_list.txt'
+saveDir = r'D:\save'
 
 
 # txt_list 읽어오기
@@ -12,6 +12,7 @@ with open(txt_list_path, 'r', encoding='utf-8') as f:
         each = each.strip('\n')
         each = each.split('.')[0]
         txt_list.append(each)
+        txt_list.sort()
         
         
 # img_list 읽어오기
@@ -21,6 +22,7 @@ with open(img_list_path, 'r', encoding='utf-8') as f:
         each = each.strip('\n')
         each = each.split('.')[0]
         img_list.append(each)
+        img_list.sort()
         
         
 # txt_list 에만 있는 것

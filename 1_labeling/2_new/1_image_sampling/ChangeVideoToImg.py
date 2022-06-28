@@ -3,12 +3,12 @@ import sys
 import cv2
 
 
-videoDir        = r"E:\0610\seongnamfalse0125_video"
-resDir          = r"E:\0610\seongnamfalse0125_img"
+videoDir        = r"D:\0627\seongnam20200330_falldown_video"
+resDir          = r"D:\0627\seongnam20200330_falldown_img"
 
 ENCODING_FORMAT = "UTF-8"
-resFolderName   = "seongnamfalse0125_img"
-fileNum         = 100
+resFolderName   = "seongnam20200330_falldown"
+fileNum         = 10
 
 
 def checkInitDirValid():
