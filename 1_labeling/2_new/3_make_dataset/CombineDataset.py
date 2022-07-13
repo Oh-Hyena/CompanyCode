@@ -3,8 +3,8 @@ import sys
 import shutil
 
 
-originDatasetDir = r"D:\dataset2"
-newDatasetDir    = r"D:\0627\dataset"
+originDatasetDir = r"C:\Users\ohhye\VisionProject\1_labeling\dataset"
+newDatasetDir    = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\dataset"
 
 ENCODING_FORMAT = "UTF-8"
 

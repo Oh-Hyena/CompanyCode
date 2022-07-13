@@ -6,8 +6,8 @@ import zipfile
 import shutil
 
 
-zipDir          = r"D:\0627\zip"
-resDir          = r"D:\0627\seongnam20200330_falldown_txt"
+zipDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\zip"
+resDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_txt"
 
 ENCODING_FORMAT = "UTF-8"
 deleteFileList  = ["obj.data", "obj.names", "train.txt"]

@@ -13,9 +13,9 @@ import xml.etree.ElementTree as ET
 import cv2
 import numpy as np
 
-cvatxmlrootpath = r"G:\ai_hub\CCTV 추적 영상\cctv_infant2\cctv_infant2_xml"
-imagesrootpath =  r"G:\ai_hub\CCTV 추적 영상\cctv_infant2\cctv_infant2_img"
-cropedrootpath =  r"G:\ai_hub\CCTV 추적 영상\cctv_infant2\cctv_infant2_crop"
+cvatxmlrootpath = r"H:\seongnamfalse\2021\1126\labeling\seongnamfalse1126_cvatxml\1_total"
+imagesrootpath =  r"H:\seongnamfalse\2021\1126\labeling\seongnamfalse1126_img"
+cropedrootpath =  r"H:\seongnamfalse\2021\1126\attribute\crop"
 
 def naming(length, name):
     name = str(name)
@@ -45,16 +45,17 @@ def naming(length, name):
             return name
 
 
-
 def imread(filename, flags=cv2.IMREAD_COLOR, dtype=np.uint8):
     try:
-	    n = np.fromfile(filename, dtype)
-	    img = cv2.imdecode(n, flags)
+        n = np.fromfile(filename, dtype)
+        img = cv2.imdecode(n, flags)
 
-	    return img
+        return img
     except Exception as e:
-	    print(e)
-	    return None
+        print(e)
+        return None
+
+
 
 def imwrite(filename, img, params=None):
     try:

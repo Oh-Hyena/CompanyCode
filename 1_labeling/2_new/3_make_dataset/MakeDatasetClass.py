@@ -9,9 +9,9 @@ from random import shuffle
 import shutil
 
 
-imgDir = r"D:\0628\seongnam20200330_falldown_img"
-txtDir = r"D:\0628\seongnam20200330_falldown_txt"
-resDir = r"D:\dataset3"
+imgDir = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_img"
+txtDir = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_txt"
+resDir = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\dataset"
 
 ENCODING_FORMAT = "UTF-8"
 splitPercent     = [80, 10, 10]  # [train, valid, test]
@@ -147,6 +147,7 @@ class makeDataset:
             shutil.copy(eachLine, os.path.join(path, eachBase))
 
 
+    # 다시 만들어야 함
     def eachResList(self, list, path):
         type = os.path.basename(path.split("_")[0])
         with open(os.path.join(resDir, type + "_list.txt"), 'w', encoding=ENCODING_FORMAT) as f:

@@ -9,15 +9,15 @@ import os
 import shutil
 
 
-cropedrootpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\legacy_original"
-tasksrootpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original\upload"
-taskname = "legacy_"    ## 언더바 넣어야함.
+cropedrootpath = r"H:\seongnamfalse\2021\1126\attribute\crop"
+tasksrootpath = r"H:\seongnamfalse\2021\1126\attribute\att_seongnamfalse1126_500_img\1_total"
+taskname = "att_seongnamfalse1126_"    ## 언더바 넣어야함.
 tasknumber = 1
 
 fileext = ".jpg"
 
 
-MAX = 150
+MAX = 300
 
 
 def naming(length, name):

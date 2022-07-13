@@ -9,8 +9,8 @@ import shutil
 
 
 # extract 'yolo txt' zipfile at cvatxml server ('not image')
-zipDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\zip"
-resDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\txt"
+zipDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\zip"
+resDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_txt"
 
 ENCODING_FORMAT = "UTF-8"
 deleteFileList  = ["obj.data", "obj.names"]  # 고정값
