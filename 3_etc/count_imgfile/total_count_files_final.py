@@ -2,8 +2,8 @@
 
 import os
 
-folderDir = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original\upload"
-resultDir = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original"
+folderDir = r"H:\seongnamfalse\2022\0408\seongnam0408_img"
+resultDir = r"H:\seongnamfalse\2022\0408\img_count"
 
 # resultDir 만들기
 def makeResultDir():

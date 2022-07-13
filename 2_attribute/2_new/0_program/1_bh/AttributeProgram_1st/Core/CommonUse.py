@@ -426,7 +426,7 @@ def isTrue(Bool):
 # CheckTime OHN
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 def checkTime():
-    DF_TIME = 90
+    DF_TIME = 10000
     curTime = datetime.datetime.now()
     preTime = datetime.datetime.strptime(DATE, "%Y-%m-%d")
     diff    = curTime - preTime 

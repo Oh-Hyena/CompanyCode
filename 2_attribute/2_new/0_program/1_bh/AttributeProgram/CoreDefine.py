@@ -60,20 +60,20 @@ import re
 """
 CrushedImgFileName          = 'CrushImg.txt'
 
-OriginSource_cvatXml_Path   = r"F:\ai_hub\CCTV_추적_영상\잡상인\cctv_merchant3\att_cctv_merchant3_500_xml"
-OriginSource_Img_Path       = r"F:\ai_hub\CCTV_추적_영상\잡상인\cctv_merchant3\att_cctv_merchant3_500_img"
+OriginSource_cvatXml_Path   = r"E:\attTest\0706\xml"
+OriginSource_Img_Path       = r"E:\attTest\0706\img"
 
 OriginSource_AnntationPath  = r"E:\test\ConditionFilter_Annotation.txt"
 OriginSource_ImageListPath  = r"E:\test\ConditionFilter_ImgList.txt"
 
 OriginSource_AnalysisPath   = r"C:\PythonHN\Data\Res1107\ImageSize_Analysis_Source.txt"
 
-Result_Dir_Path             = r"E:\test"
+Result_Dir_Path             = r"E:\attTest\0706\res"
 
 Abbreviated_Img_Path        = r"C:\PythonHN\Data\ABB TEST\condition_common_img"   # 축약시킨 이미지 들어있는 폴더
 RealExistCheck_Path         = r""
 
-Pre_Search_Remember_Path    = r"E:/test"
+Pre_Search_Remember_Path    = r"E:/attTest/0706"
 
 
 # OTHER DEFINES
