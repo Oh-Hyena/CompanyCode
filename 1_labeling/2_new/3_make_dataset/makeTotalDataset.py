@@ -5,9 +5,9 @@ import sys
 import shutil
 
 
-imgDir          = r"D:\0626\seongnam20200330_falldown_img"
-txtDir          = r"D:\0626\seongnam20200330_falldown_txt"
-resDir          = r"D:\0626\dataset\total_dataset"
+imgDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_img"
+txtDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_txt"
+resDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\dataset\total_dataset"
 
 ENCODING_FORMAT = "UTF-8"
 

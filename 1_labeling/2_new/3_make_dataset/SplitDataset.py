@@ -3,9 +3,9 @@ import sys
 import shutil
 
 
-totalDatasetDir = r"D:\0626\dataset\total_dataset"
-imgListPath     = r"D:\0626\dataset\total_dataset_list.txt"
-resDir          = r"D:\0626\dataset"
+totalDatasetDir = r"C:\Users\ohhye\VisionProject\1_labeling\dataset\total_dataset"
+imgListPath     = r"C:\Users\ohhye\VisionProject\1_labeling\dataset\shuffle_total_dataset_list.txt"
+resDir          = r"C:\Users\ohhye\VisionProject\1_labeling\dataset\sh"
 
 ENCODING_FORMAT = "UTF-8"
 splitPecent     = [80, 10, 10]  # [train, valid, test]
@@ -46,7 +46,6 @@ def readShuffleTotalDataset():
     
     with open(imgListPath, 'r', encoding=ENCODING_FORMAT) as f:
         for eachLine in f:
-            print("49 : ", eachLine)
             eachLine = eachLine.strip('\n')
             imgName  = eachLine.split('\\')[-1]
             txtName  = imgName.replace(".jpg", ".txt")

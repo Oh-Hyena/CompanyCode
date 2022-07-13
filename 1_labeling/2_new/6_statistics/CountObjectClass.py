@@ -7,7 +7,7 @@ import sys
 txtDir = r"D:\0610\dataset2\total_dataset"
 resDir = r"D:\0610\dataset2"
 
-ENCODING_FORMAT     = "UTF-8"
+ENCODING_FORMAT = "UTF-8"
 
 
 class CountObject:
@@ -68,7 +68,7 @@ class CountObject:
                     else:
                         carTotal    += 1   # car 객체 개수
                     
-                with open(os.path.join(resDir, "analysis_" + os.path.basename(txtDir) + ".txt"), 'w', encoding='utf-8') as f:
+                with open(os.path.join(resDir, "analysis_" + os.path.basename(txtDir) + ".txt"), 'w', encoding=ENCODING_FORMAT) as f:
                     f.write(f"[ img count ]\n")
                     f.write(f"* 전체 : {str(TotalImg).rjust(5)}\n")
                     f.write(f"\n[ obj count ]\n")
