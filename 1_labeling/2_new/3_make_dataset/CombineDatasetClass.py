@@ -39,7 +39,7 @@ class CombineDataset:
     
     
     def makeTotalCopyList(self):
-        for path, dir, files in os.walk(newDatasetDir):
+        for path, _, files in os.walk(newDatasetDir):
             for file in files:
                 if 'list' not in file:
                     self.newList.append(f'{os.path.basename(file)},{os.path.join(path, file)}')

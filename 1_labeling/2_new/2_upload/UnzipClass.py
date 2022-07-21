@@ -9,8 +9,8 @@ import shutil
 
 
 # extract 'yolo txt' zipfile at cvatxml server ('not image')
-zipDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\zip"
-resDir          = r"D:\hyena\3_dataset\seongnam\2020\0330\seongnam\231_300\seongnam20200330_falldown_txt"
+zipDir          = r"E:\attTest\0713\zip"
+resDir          = r"E:\attTest\0713\attTest0713_txt"
 
 ENCODING_FORMAT = "UTF-8"
 deleteFileList  = ["obj.data", "obj.names"]  # 고정값
@@ -52,7 +52,7 @@ class UnzipClass:
                 f.extractall(resDir)   
         
     
-    def moveYoloTxtFile():
+    def moveYoloTxtFile(self):
         print("[ play ] Move Yolo Txt")
         
         for path, dirs, files in os.walk(resDir):
@@ -62,7 +62,7 @@ class UnzipClass:
         
     
     # 폴더 안에 파일이 없어야 폴더 삭제 가능!
-    def deleteNothing():
+    def deleteNothing(self):
         print("[ play ] Delete Nothing Dir")
     
         # zip 파일 삭제
