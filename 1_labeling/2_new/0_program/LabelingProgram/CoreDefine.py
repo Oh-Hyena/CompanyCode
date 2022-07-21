@@ -26,9 +26,9 @@ CORE_ERROR_STRICT   = ERROR_STRICT_SOFT # 에러 발생 시, 처리 정도를 �
 CrushedImgFileName        = 'CrushImg.txt'
 
 OriginSource_Video_Path   = r"E:\attTest\0704\video"
-OriginSource_Img_Path     = r""
-OriginSource_Zip_Path     = r""
-OriginSource_Txt_Path     = r""
+OriginSource_Img_Path     = r"E:\test\img"
+OriginSource_Zip_Path     = r"E:\attTest\0713\zip"
+OriginSource_Txt_Path     = r"E:\test\txt"
 
 OriginSource_NewDataset_Path = r''
 OriginSource_OriDataset_Path = r''
@@ -36,9 +36,9 @@ OriginSource_OriDataset_Path = r''
 OriginSource_CvatXml_Path = r""
 OriginSource_AnalysisPath = r''
 
-Result_Dir_Path           = r"E:\attTest\0704\img"
+Result_Dir_Path           = r"E:\test\res"
 RealExistCheck_Path       = r''
-Pre_Search_Remember_Path    = r"E:/attTest/0704"
+Pre_Search_Remember_Path    = r"E:/test"
 
 
 # OTHER DEFINES

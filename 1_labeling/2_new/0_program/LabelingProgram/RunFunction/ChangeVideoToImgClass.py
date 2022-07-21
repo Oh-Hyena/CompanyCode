@@ -26,7 +26,7 @@ from CoreDefine                 import *
 # Custom Modules
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 from Core.CommonUse             import *
-from Core.CvatXmlClass          import CvatXml
+# from Core.CvatXmlClass          import CvatXml
 from Core.SingletonClass        import Singleton
 
 
@@ -47,8 +47,8 @@ validVideoFormat      = copy.copy(VALID_VIDEO_FORMAT)
 
 # SAVE FILE & DIR NAME
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-RES_FOLDER_NAME  =  "seongnamfalse0125"
-saveFolderName   =  "seongnamfalse0125.txt"
+RES_FOLDER_NAME       =  "seongnamfalse0125"
+saveFolderName        =  "seongnamfalse0125.txt"
 
 
 # VARIABLE DEFINE
@@ -91,11 +91,13 @@ class ChangeVideoToImg(Singleton):
     def __init__(self, QApp):
         self.app                 = QApp
         self.ProgramName         = "ChangeVideoToImg"
+
         self.videoList           = []
         self.fileNum             = FILE_NUM
         self.OriginVideoDict     = {}
         self.imgCountList        = []
         self.totalFiles          = 0
+        
         self.sendArgsList        = []
 
         self.initializeCV()
@@ -121,7 +123,6 @@ class ChangeVideoToImg(Singleton):
 
         
     def makeResDir(self, Dir):
-        print()
         NoticeLog("Change Video To Image Result Dir Start")
         
         if not os.path.isdir(Dir):
@@ -182,7 +183,7 @@ class ChangeVideoToImg(Singleton):
         # 돌리면서 유효한 비디오 확장자만 Dict, List 에 추가하기
         self.OriginVideoDict = getVideoSearchDict(workPath, validVideoFormat)
 
-        # 유효한 이미지가 있었을 때
+        # 유효한 비디오가 있었을 때
         if self.OriginVideoDict is None:
             ErrorLog(f'`{workPath}` is Nothing Vaild Video', lineNum=lineNum(), errorFileName=filename())
             return False
@@ -249,13 +250,15 @@ class ChangeVideoToImg(Singleton):
                         
                 capture.release()
 
-        SuccessLog(f'Done << Changed Video To Img')
+        # SuccessLog(f'Done << Changed Video To Img')
         print()
 
         return True
     
 
     def saveImgCount(self):
+        NoticeLog(f'Start << Count Number of Images')
+
         for root, dirs, files in os.walk(ResultDirPath):
             self.totalFiles += len(files)
             if RES_FOLDER_NAME in root:
@@ -270,7 +273,7 @@ class ChangeVideoToImg(Singleton):
                 f.write(f'{eachLine}\n')
             f.write(f'\n총 이미지 장수 : {self.totalFiles}')
 
-        SuccessLog(f'Done << Count Number of Imgs')
+        # SuccessLog(f'Done << Count Number of Imgs')
 
 
     def run(self):
