@@ -59,9 +59,9 @@ def pickAnnoInfo(noteList, fileNameList):
         
         for image in note.findall("image"):             # image = <Element 'image' at 0x0000015F12DA5680>
             name = image.get("name")                    # name = seongnamfalse1112_000009_00147.jpg
-            
+                                                        # filename = seongnamfalse1112_000009_00147
             for box in image.findall("box"):
-                label     = box.get("label")                # label = car
+                label     = box.get("label")            # label = car
                 attribute = box.find("attribute").text  # attribute = pure
                 
                 xtl  = int(float(box.get("xtl")))       # xtl, ytl, xbr, ybr = 352 126 371 143
@@ -74,8 +74,8 @@ def pickAnnoInfo(noteList, fileNameList):
                 
                 if (label == "person") and (attribute == "pure") and (xlen > 25) and (ylen > 25):
                     #                        {0},     {1},  {2},  {3},  {4},  {5}
-                    xmlInfoList.append(f'{filename},{name},{ytl},{ybr},{xtl},{xbr}')
-                    
+                    xmlInfoList.append(f'{filename},{name},{ytl},{ybr},{xtl},{xbr}')   
+
     return xmlInfoList
 
 
@@ -137,7 +137,6 @@ def cropPerson(xmlInfoList, imgDir):
         if img is None:
             break
         src = img.copy()
-        
         cropImg  = src[int(each[2]):int(each[3]), int(each[4]):int(each[5])]
     
         filename = each[1].split(".")[0] + "_" + numCount(6, str(fileCount)) + ".jpg"

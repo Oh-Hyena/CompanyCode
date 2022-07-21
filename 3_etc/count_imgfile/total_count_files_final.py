@@ -2,8 +2,8 @@
 
 import os
 
-folderDir = r"H:\seongnamfalse\2022\0408\seongnam0408_img"
-resultDir = r"H:\seongnamfalse\2022\0408\img_count"
+folderDir = r"H:\seongnamfalse\2022\0603\seongnam0603\seongnam0603_img"
+resultDir = r"H:\seongnamfalse\2022\0603\seongnam0603\img_count"
 
 # resultDir 만들기
 def makeResultDir():
