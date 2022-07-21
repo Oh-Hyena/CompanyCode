@@ -289,7 +289,7 @@ def readFileToList(filePath, rList:list, encodingFormat=CORE_ENCODING_FORMAT):
         for eachLine in f:
             eachLine = eachLine.strip('\n')
             rList.append(eachLine)
-    SuccessLog(f'Read Done << {filePath}')
+    # SuccessLog(f'Read Done << {filePath}')
 
 
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-

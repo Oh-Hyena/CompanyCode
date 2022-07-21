@@ -20,13 +20,13 @@ import shutil
 import numpy as np
 
 # 원본 동영상이 있는 폴더 경로
-videopath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\legacy_original"
+videopath = r"H:\seongnamfalse\2021\1223\seongnam1223\seongnam1223_30\labeling\seongnam1223_30_video"
 
 # 샘플링한 이미지를 저장할 폴더 경로
-targetpath = r"G:\Dataset\train_dataset\Unicardataset_2class_add_dataset\_cvatxml\legacy_original\upload"
+targetpath = r"H:\seongnamfalse\2021\1223\seongnam1223\seongnam1223_30\labeling\seongnam1223_30_img\1_pure_050"
 
 # 저장될 이미지 폴더 이름(seongnamfalse0430_00001_00001.jpg) 중 class 부분
-videoclass = "legacy"
+videoclass = "seongnam1223_30"
 # 저장될 이미지 폴더 이름(seongnamfalse0430_00001_00001.jpg) 중 번호 부분
 videonumber = 1
 
@@ -38,7 +38,7 @@ videonumber = 1
 mode = "jpg"
 
 # 몇 장씩 뽑을 것인지 설정하기 (동영상 초수 * 5 = 30초 * 5 = 150장)
-COUNT = 150
+COUNT = 50
 
 # 이름 생성 함수
 def naming(length, name):

@@ -42,9 +42,9 @@ import random
 from xml.dom import minidom
 
 # data_process > cvatxmls, documents, notpure, pure, xmls 하위 폴더 만들기
-rootpath = r"H:\seongnamfalse\2021\1008\labeling\condition_1st_seongnamfalse1008\data_process"
+rootpath = r"G:\labelingDataset\origin\test_dataset\coco17\data_process"
 
-imageRootpath = r"H:\seongnamfalse\2021\1008\labeling\condition_1st_seongnamfalse1008\condition_1st_seongnamfalse1008_img"
+imageRootpath = r"G:\labelingDataset\origin\test_dataset\coco17\img"
 
 logpath = os.path.join(rootpath, "documents")
 
