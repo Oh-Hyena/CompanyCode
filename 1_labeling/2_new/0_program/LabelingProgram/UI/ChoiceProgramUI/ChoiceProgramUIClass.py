@@ -39,9 +39,9 @@ ProgramList =   [   'ChangeVideoToImg',
                     'UnzipYoloTxt',
                     'MakeLabelingDataset',
                     'CombineDataset',
-                    'AnalysisLabelingDataset',
+                    'CountObject',
                     'LabelingAugmentation',
-                    'CropPurePerson'
+                    'CropPersonByTxt'
                 ]
 
 
@@ -53,7 +53,7 @@ DetailList  =   [   'Video(.mp4) 파일을 Image(.jpg) 파일로 변환해주는
                     'New Dataset 을 Origin Dataset 에 복사해주는 프로그램',
                     'YOLO.txt 파일을 읽어서 이미지와 객체 개수를 출력하는 프로그램',
                     'Labeling Dataset 을 원하는 횟수만큼 증강하는 프로그램',
-                    'Cvatxmls 파일을 읽어서 정해진 크기 이상의 Pure 한 Person 이미지만 추출하는 프로그램'
+                    'Txt 파일을 읽어서 입력한 크기 이상의 Person 이미지만 추출하는 프로그램'
                 ]
 
 

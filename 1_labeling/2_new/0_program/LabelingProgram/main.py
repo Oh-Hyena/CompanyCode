@@ -7,6 +7,9 @@ from Core.CommonUse                             import *
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 from RunFunction.ChangeVideoToImgClass          import ChangeVideoToImg
 from RunFunction.UnzipClass                     import UnzipYoloTxt
+from RunFunction.CountObjectClass               import CountObject
+from RunFunction.CropPersonByTxtClass           import CropPersonByTxt
+
 
 # IMPORT UI
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*

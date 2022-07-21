@@ -26,7 +26,7 @@ from CoreDefine                 import *
 # Custom Modules
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 from Core.CommonUse             import *
-from Core.CvatXmlClass          import CvatXml
+# from Core.CvatXmlClass          import CvatXml
 from Core.SingletonClass        import Singleton
 
 
@@ -91,11 +91,13 @@ class ChangeVideoToImg(Singleton):
     def __init__(self, QApp):
         self.app                 = QApp
         self.ProgramName         = "ChangeVideoToImg"
+
         self.videoList           = []
         self.fileNum             = FILE_NUM
         self.OriginVideoDict     = {}
         self.imgCountList        = []
         self.totalFiles          = 0
+        
         self.sendArgsList        = []
 
         self.initializeCV()

@@ -1,7 +1,3 @@
-# change new version cvatxml's form 
-# try new version cvatxml's environment
-
-
 # IMPORT
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 import os
@@ -25,7 +21,7 @@ from CoreDefine                 import *
 # Custom Modules
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 from Core.CommonUse             import *
-from Core.CvatXmlClass          import CvatXml
+# from Core.CvatXmlClass          import CvatXml
 from Core.SingletonClass        import Singleton
 
 
@@ -46,15 +42,16 @@ validImgFormat        = copy.copy(VALID_IMG_FORMAT)
 
 
 # DELETE LIST
+# -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 deleteFileList  = ["obj.data", "obj.names"]  # 고정값
 
 
 # Class
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-class UnzipYoloTxt(Singleton, CvatXml):
+class UnzipYoloTxt(Singleton):
     def __init__(self, QApp):
-        super().__init__(OriginZipDirPath)
         self.app            = QApp
+        self.ProgramName    = "UnzipYoloTxt"
 
         self.zipList        = []
         self.sendArgsList   = []
@@ -63,8 +60,6 @@ class UnzipYoloTxt(Singleton, CvatXml):
         
     
     def initializeUZ(self):
-        self.setRunFunctionName('UnzipYoloTxt')   
-    
         self.selectUi = SelectUI(self.setInitSettingSelectUI, self.getEditSettingSelectUI)    
         
         self.selectUi.show()
@@ -77,7 +72,6 @@ class UnzipYoloTxt(Singleton, CvatXml):
 
 
     def initAfterSetUI(self):
-        # self.initCvatXmlClass()  # RunFunctionName()
         self.savePath = self.makeResDir(ResultDirPath)
 
 
@@ -98,7 +92,7 @@ class UnzipYoloTxt(Singleton, CvatXml):
                                 ['FD', 'ResultDirPath',                 True,   f'{ResultDirPath}'],
                                 ['FD', 'HLINE_0',                       False,  'None'],
                             ]
-        return self.getRunFunctionName(), self.sendArgsList
+        return self.ProgramName, self.sendArgsList
     
 
     def getEditSettingSelectUI(self):
@@ -146,7 +140,7 @@ class UnzipYoloTxt(Singleton, CvatXml):
                 f.extractall(ResultDirPath)   
         
     
-    def moveYoloTxtFile():
+    def moveYoloTxtFile(self):
         for path, dirs, files in os.walk(ResultDirPath):
             for file in files:
                 if file.endswith(".txt") and file != "train.txt":
@@ -154,7 +148,7 @@ class UnzipYoloTxt(Singleton, CvatXml):
         
     
     # 폴더 안에 파일이 없어야 폴더 삭제 가능!
-    def deleteNothing():
+    def deleteNothing(self):
         # zip 파일 삭제
         for each in os.listdir(OriginZipDirPath):
             os.remove(os.path.join(OriginZipDirPath, each))
@@ -168,35 +162,13 @@ class UnzipYoloTxt(Singleton, CvatXml):
             os.remove(os.path.join(ResultDirPath, each))
     
 
-    def RunFunction(self):
-        self.unzip()
-        self.moveYoloTxtFile()
-        self.deleteNothing()
-        return True
-
-    def setRunFunctionParam(self):
-        pass
-
-    def setAfterRunFunctionParam(self):
-        return super().setAfterRunFunctionParam()
-
-    # 가상함수 : RunFunction 의 결과가 fasle 일 때 실행하는 함수
-    def AfterRunFunction(self):
-        pass
-
-    # ABS FUNC(가상 함수) 재정의 함수
-    def setFinishFunctionParam(self):
-        return super().setFinishFunctionParam()
-
-    def FinishFunction(self):
-        pass
-
-
     def run(self):
         if self.selectUi.isQuitProgram():
             NoticeLog(f'{self.__class__.__name__} Program EXIT\n')
         else:
-            super().run()
+            self.unzip()
+            self.moveYoloTxtFile()
+            self.deleteNothing()
             os.startfile(ResultDirPath)
         
     

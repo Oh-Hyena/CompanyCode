@@ -38,7 +38,7 @@ OriginSource_AnalysisPath = r''
 
 Result_Dir_Path           = r"E:\attTest\0704\img"
 RealExistCheck_Path       = r''
-Pre_Search_Remember_Path    = r"E:/attTest/0704"
+Pre_Search_Remember_Path    = r"E:/attTest/0713"
 
 
 # OTHER DEFINES
